@@ -7,7 +7,7 @@ const MainPage = () => {
         <div className="flex w-screen">
             <Header />
         </div>
-        <div className="flex flex-col w-screen h-screen font-mono justify-center items-center divide-y ">
+        <div className="flex flex-col w-screen h-screen font-mono justify-center items-center text-center">
             Welcome to MaCRa
         </div>
         <div className="flex flex-col w-screen">
