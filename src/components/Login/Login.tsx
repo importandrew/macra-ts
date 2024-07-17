@@ -1,8 +1,8 @@
-import {Card, CardBody, CardHeader, Divider, Image, Navbar, NavbarBrand,
-  NavbarItem, Input, Spacer, Button, Link} from '@nextui-org/react';
+import {Card, CardBody, CardHeader, Divider, Input, Spacer, Button, Link} from '@nextui-org/react';
 import {useState} from "react";
 import {EyeIcon} from "./EyeOpen";
 import {EyeClosedIcon} from "./EyeClosed";
+import Header from "../../components/Header/Header"
 
 export default function LoginPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,14 +11,7 @@ export default function LoginPage() {
 
   return (
     <div className="flex flex-col h-screen w-screen my-auto">
-      <div>
-        <Navbar maxWidth="full">
-          <NavbarBrand className="gap-3">
-            <Image src="../makura.png" className="h-10" />
-            <NavbarItem>MaCRa</NavbarItem>
-          </NavbarBrand>
-        </Navbar>
-      </div>
+      <Header />
       <div className="flex flex-col max-w-screen h-screen text-2xl text-center justify-center items-center mx-5">
         <Card fullWidth className="mx-5">
           <CardHeader className="flex justify-center bg-gray-300">Login</CardHeader>

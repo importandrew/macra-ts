@@ -1,6 +1,7 @@
 import {useQuery} from '@tanstack/react-query';
 // import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
-import {Spinner, Navbar, NavbarBrand, NavbarItem, Image} from "@nextui-org/react";
+import {Spinner} from "@nextui-org/react";
+import Header from "../../components/Header/Header"
 
 export default function TestPage() {
     const { isPending, isError, data, error } = useQuery({
@@ -18,14 +19,7 @@ export default function TestPage() {
     if (isPending) {
         return (
         <div className="flex flex-col h-screen w-screen my-auto">
-            <div>
-                <Navbar maxWidth="full">
-                    <NavbarBrand className="gap-3">
-                    <Image src="../makura.png" className="h-10" />
-                        <NavbarItem>MaCRa</NavbarItem>
-                    </NavbarBrand>
-                </Navbar>
-            </div>
+            <Header />
             <div className="flex flex-col max-w-screen h-screen text-2xl text-center justify-center items-center mx-5">
             <Spinner label="Loading..." size="lg" />
             </div>

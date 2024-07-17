@@ -1,4 +1,4 @@
-import Header from '../Header/Header';
+import Header from '../Header/HeaderWithLogin';
 import MainButton from './Button';
 
 const MainPage = () => {
